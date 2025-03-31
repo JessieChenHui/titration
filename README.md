@@ -30,6 +30,6 @@
 2） 如果使用滴定管，可以参考《Computer Vision in Chemistry: Automatic Titration》通过计算机视觉方式获取滴定读数。
 
 # 四、程序说明
-"main.py": 滴定时自动识别状态主程序。  <img src="docs/images/main.png" style="width: 50%; height: auto;">
+"main.py": 滴定时自动识别状态主程序。  <img src="docs/images/main.png" style="width: 50%; height: auto;">  
 "titration_dl.ipynb": 模型训练程序。  
 部分甲基红滴定视频见 https://pan.baidu.com/s/1LcWHjo6_935VxkJuRnvlCg?pwd=t6yg 提取码: t6yg
