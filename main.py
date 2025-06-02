@@ -115,7 +115,7 @@ class MainWindow:
 
         transform = transforms.Compose([
             transforms.Resize(224),
-            # transforms.CenterCrop(224),
+            transforms.CenterCrop(224),
             transforms.ToTensor(),
             transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
         ])
@@ -200,7 +200,7 @@ class MainWindow:
     def on_select(self, event):
         if self.combobox.get() != self.ai_name:
             self.ai_name = self.combobox.get()
-            print(f're init ai process with ai_model {self.ai_name}.')
+            print(f'Re init ai process with ai_model {self.ai_name}.')
             self.init_ai_process()
 
     def create_buttons(self, buttons):
@@ -231,7 +231,7 @@ class MainWindow:
         options = list(ai_models.keys())
 
         # 创建 Combobox
-        self.combobox = ttk.Combobox(self.control_frame, values=options, width=5)
+        self.combobox = ttk.Combobox(self.control_frame, values=options, width=7)
         self.combobox.set(options[0])  # 设置默认值
         self.combobox.pack(side=tk.LEFT)
 
