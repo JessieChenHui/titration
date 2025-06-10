@@ -10,3 +10,5 @@ torch==2.4.1
 torchsummary==1.5.1
 torchvision==0.19.1
 tqdm==4.62.3
+pymediainfo==6.1.0
+paddleocr==2.9.1

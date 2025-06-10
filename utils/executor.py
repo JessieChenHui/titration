@@ -12,6 +12,7 @@ import torchvision.transforms as transforms
 import os
 import cv2
 from PIL import Image
+from models.titration_model import CustomModule
 
 
 class TaskExecutor:

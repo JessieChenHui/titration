@@ -214,7 +214,7 @@ class MainWindow:
     def create_control_frame(self):
 
         # 添加输入框和按钮
-        self.url_entry = tk.Entry(self.control_frame, width=45)
+        self.url_entry = tk.Entry(self.control_frame, width=42)
         self.url_entry.insert(0, self.video_url)
         self.url_entry.pack(side=tk.LEFT)
 
@@ -231,7 +231,7 @@ class MainWindow:
         options = list(ai_models.keys())
 
         # 创建 Combobox
-        self.combobox = ttk.Combobox(self.control_frame, values=options, width=7)
+        self.combobox = ttk.Combobox(self.control_frame, values=options, width=9)
         self.combobox.set(options[0])  # 设置默认值
         self.combobox.pack(side=tk.LEFT)
 
